@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LYKAA</title>
+    <!--Ion Icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <!--Our own stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+        
+                <div class="menu-icons open" onclick="addClass()">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+        
+                <ul class="nav-list" id = "navbar">
+                    <div class="menu-icons close" onclick="removeclass()">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link current">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="main-message">
+                    <h3> safe woman safe india</h3>
+                    <h1> lykaa </h1>
+                    <P>  
+Periods are an integral part of a woman’s life, and so are sanitary pads!
+While on her periods, a woman surely experiences discomfort, irritation and 
+menstrual pain. However, we at LYKAA dedicate ourselves to creating sanitary 
+pads that are safe, comfortable & effective so that nothing stops her from going 
+out and living her life.
+                    </P>
+                    <div class="cta">
+                        <a href="#" class="btn"> Book now </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience-outdoor">
+            <div class="container">
+                    <div class="title-heading">
+                        <h3>experience</h3>
+                        <h1>Products</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptatum </p>
+                    </div>
+                    <div class="activities-grid">
+                        <div class="activities-grid-item about_us">
+                        <i class="icon ion-ios-briefcase"></i>
+                            <h3>the thrilling outdoors</h3>
+                            <h1>products</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates dolor doloribus </p>
+                        </div>
+                        <div class="activities-grid-item products">
+                            <i class="icon ion-md-information-circle"></i>
+                            <h3>the thrilling outdoors</h3>
+                            <h1>about us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates dolor doloribus </p>
+                        </div>
+                        <div class="activities-grid-item contact">
+                            <i class="icon ion-md-contact"></i>
+                            <h3>the thrilling outdoors</h3>
+                            <h1>contact us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates dolor doloribus </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial">
+                    <div class="testimonial-text-box">
+                        <p>
+                            Women empowerment is crucial to India's growth.
+                            Days of seeing women as 'home makers' have gone, we have to see women as nation builders!
+                        </p>
+                        <i class="icon ion-md-quote"></i>
+                    </div>
+                    <div class="testimonial-customer">
+                        <img src="images/modiji.png">
+                        <h1>PMO (INDIA) Narendra modi</h1>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contact-heading">contact us</div>
+            <div class="contact-icons">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter-square"></i>
+                <i class="fa fa-youtube-square"></i>
+            </div>
+        </section>
+        
+    </main>
+
+    <script>
+            function addClass() { 
+                var v = document.getElementById("navbar"); 
+                v.className += " active"; 
+            } 
+            function removeclass() { 
+                var v = document.getElementById("navbar"); 
+                v.className = "nav-list"; 
+            } 
+    </script>
+</body>
+</html>
